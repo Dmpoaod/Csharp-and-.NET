@@ -23,6 +23,27 @@ namespace Zad1
         }
         
     }
+
+    public class NonPlayerCharacter
+    {
+        public string name;
+
+        public NonPlayerCharacter(string NPCname)
+        {
+            name = NPCname;
+        }
+    }
+
+    public class NpcDialogPart
+    {
+        
+    }
+
+    public class HeroDialogPart
+    {
+        
+    }
+    
     class Program
     {
         
