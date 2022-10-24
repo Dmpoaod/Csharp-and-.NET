@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Concurrent;
+using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 
 namespace Zad1
@@ -31,12 +34,25 @@ namespace Zad1
         public NonPlayerCharacter(string NPCname)
         {
             name = NPCname;
+
+            void NpcDialogPartStartTalking()
+            {
+                
+            }
+
         }
+    }
+
+    public class Location
+    {
+        public string locationName;
+        public NonPlayerCharacter[] NPCList = new NonPlayerCharacter[10];
     }
 
     public class NpcDialogPart
     {
-        
+        private string[] HDiag = new string[] { "Tak, chętnie pomogę", "„Dam znać jak będę gotowy", "100 sztuk złota to za mało!", "OK, może być 100 sztuk złota", "W takim razie radź sobie sam.", "Nie, nie pomogę, żegnaj" };
+
     }
 
     public class HeroDialogPart
